@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column
+}
+
+.container__menuTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1F2139;
+  padding: 0 20px;
+  flex-grow: .3;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.back{
+  margin-right: 10px;
+}
+
+.menuTop__img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.menuTop__name {
+  margin-left: 10px
+}
+
+.menuTop__actions {
+  margin-left: auto;
+}
+
+.container__message {
+  background: #fff;
+  flex-grow: 6;
+  color: #050506;
+  padding: 10px 20px;
+}
+
+
+
+.message {
+  display:flex;
+  flex-direction: column;
+  background-color: #99E8FF;
+  padding: 5px 20px;
+  margin-top: 10px;
+  margin-left: auto;
+  border-radius: 50px;
+  max-width: max-content;
+}
+
+.message__received{
+  background-color: #CDD7DA
+}
+.message__received{
+  margin-left: 0
+}
+
+.message__hour {
+  font-size: .5rem;
+ margin-left: auto;
+}
+
+.message__send{
+ display: flex;
+ justify-content: center;
+ padding: 5px 20px;
+ 
+}
+.send__input{
+  flex-grow: 1;
+  height:29px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  margin-right: 10px;
+}
+.send__button{
+  background-color: #8CF08B;
+  color: #000;
+  padding: 5px 20px;
+  border-radius: 5px;
+  
+}
+
+
+.message__emoji{
+  display:flex;
+align-items: center;
+  color:#42445A;
+  margin-right: 10px;
+}
