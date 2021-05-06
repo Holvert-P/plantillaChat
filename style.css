@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #1F2139;
+  background-color: #080E2C;
   padding: 0 20px;
   flex-grow: .3;
 }
@@ -23,9 +23,12 @@
 a {
   color: #fff;
   text-decoration: none;
+  user-select: none;
+  text-align: center;
 }
 
-.back{
+
+.back {
   margin-right: 10px;
 }
 
@@ -33,7 +36,8 @@ a {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-color: #000;
+  background-image: url(./Img/20190320_133806.jpg);
+  background-size:cover;
 }
 
 .menuTop__name {
@@ -41,6 +45,9 @@ a {
 }
 
 .menuTop__actions {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 0 30px;
   margin-left: auto;
 }
 
@@ -54,55 +61,75 @@ a {
 
 
 .message {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  background-color: #99E8FF;
+  background-color: #44EABB;
   padding: 5px 20px;
   margin-top: 10px;
   margin-left: auto;
   border-radius: 50px;
   max-width: max-content;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .22)
 }
 
-.message__received{
-  background-color: #CDD7DA
+.message__received {
+  background-color: #F3FDFB
 }
-.message__received{
+
+.message__received {
   margin-left: 0
 }
 
 .message__hour {
   font-size: .5rem;
- margin-left: auto;
+  margin-left: auto;
 }
 
-.message__send{
- display: flex;
- justify-content: center;
- padding: 5px 20px;
- 
+.message__send {
+  display: flex;
+  justify-content: center;
+  padding: 5px 20px;
+  background-color: #08022C;
+  position:relative;
 }
-.send__input{
+
+.send__input {
   flex-grow: 1;
-  height:29px;
-  padding: 5px;
+  height: 29px;
+  padding: 5px 60px 5px 20px;
   border: none;
-  border-bottom: 1px solid #000;
+  border-radius: 90px;
   outline: none;
   margin-right: 10px;
+white-space: pre-line;
 }
-.send__button{
-  background-color: #8CF08B;
-  color: #000;
-  padding: 5px 20px;
-  border-radius: 5px;
-  
+.camera, .clip{
+  position: absolute;
+  bottom: 12px;
+  right: 60px;
+  color:#000;
+}
+.clip{
+  right: 85px;
+}
+.send__button {
+  color: #fff;
+  padding: 5px 0;
 }
 
 
-.message__emoji{
-  display:flex;
-align-items: center;
-  color:#42445A;
+.message__emoji {
+  display: flex;
+  align-items: center;
+  color: #fff;
   margin-right: 10px;
 }
+
+.tooltip:not(.shown) {
+  display: none;
+  }
+  
+  .tooltip{
+    position: absolute;
+    transform: translate3d(5px, 120px, 0) !important;
+  }
