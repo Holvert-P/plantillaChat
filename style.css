@@ -116,7 +116,10 @@ white-space: pre-line;
   color: #fff;
   padding: 5px 0;
 }
-
+  .tooltip {
+    position: absolute;
+    transform: translate3d(5px, -50px, 0) !important;
+  }
 
 .message__emoji {
   display: flex;
@@ -129,7 +132,3 @@ white-space: pre-line;
   display: none;
   }
   
-  .tooltip{
-    position: absolute;
-    transform: translate3d(5px, 120px, 0) !important;
-  }

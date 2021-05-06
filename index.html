@@ -24,14 +24,21 @@
         <p>Holvert</p>
       </div>
       <div class="menuTop__actions">
-        <a href="#"><i class="fas fa-phone-alt"></i></a>
-        <a href="#"><i class="fas fa-question-circle"></i></a>
+        <a href="#">
+          <i class="fas fa-video"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-phone-alt">+</i>
+        </a>
+        <a href="#">
+          <i class="fas fa-ellipsis-v"></i>
+        </a>
       </div>
     </div>
     <div class="container__message">
       <div class="message">
         <div class="message__text">
-          <p>Hi, ¿how are you?.</p>
+          <p>Hi, ¿how are you?</p>
         </div>
         <div class="message__hour">
           11:38 a.m.
@@ -39,7 +46,7 @@
       </div>
       <div class="message message__received">
         <div class="message__text">
-          <p>Hi, fine ¿and you?.</p>
+          <p>Hi, fine ¿and you?</p>
         </div>
         <div class="message__hour">
           12:38 p.m.
@@ -47,7 +54,7 @@
       </div>
       <div class="message">
         <div class="message__text">
-          <p>Hi, fine ¿and you?.</p>
+          <p>Hi, fine ¿and you?</p>
         </div>
         <div class="message__hour">
           1:38 p.m.
@@ -55,15 +62,26 @@
       </div>
     </div>
     <div class="message__send">
-      <a href="#" class="message__emoji">
+      <a href="#" class="message__emoji button">
         <i class="far fa-laugh"></i>
       </a>
-      <input class="send__input" type="text/submit/hidden/button/image" placeholder="Write your message..." />
+      <div class="tooltip" role="tooltip">
+        <emoji-picker></emoji-picker>
+      </div>
+      <input class="send__input" type="text" data-emojiable="true" placeholder="Write your message..." />
+      <a href="#">
+        <i class="fas fa-camera camera"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-paperclip clip"></i>
+      </a>
       <a class="send__button" href="#"><i class="fas fa-paper-plane"></i></a>
     </div>
   </div>
   <!-- Project -->
-  <script src="main.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script type="module" src="https://unpkg.com/emoji-picker-element@1"></script>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
